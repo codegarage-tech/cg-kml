@@ -1,0 +1,94 @@
+{
+	"successCode": "1",
+	"successMessage": "Got movie categories successfully",
+    "categories": [
+        {
+            "id": "1",
+            "title": "Action"
+        },
+        {
+            "id": "2",
+            "title": "Animation"
+        },
+        {
+            "id": "3",
+            "title": "Comedy"
+		},
+        {
+            "id": "4",
+            "title": "Documentary"
+		},
+        {
+            "id": "5",
+            "title": "Family"
+        },
+        {
+            "id": "6",
+            "title": "Film-Noir"
+        },
+        {
+            "id": "7",
+            "title": "Horror"
+        },
+		{
+            "id": "8",
+            "title": "Musical"
+        },
+        {
+            "id": "9",
+            "title": "Romance"
+        },
+        {
+            "id": "10",
+            "title": "Sport"
+		},
+        {
+            "id": "11",
+            "title": "War"
+		},
+        {
+            "id": "12",
+            "title": "Adventure"
+        },
+        {
+            "id": "13",
+            "title": "Biography"
+        },
+        {
+            "id": "14",
+            "title": "Crime"
+        },
+		{
+            "id": "15",
+            "title": "Drama"
+        },
+        {
+            "id": "16",
+            "title": "Fantasy"
+        },
+        {
+            "id": "17",
+            "title": "History"
+        },
+		{
+            "id": "18",
+            "title": "Music"
+        },
+        {
+            "id": "19",
+            "title": "Mystery"
+        },
+        {
+            "id": "20",
+            "title": "Sci-Fi"
+		},
+        {
+            "id": "21",
+            "title": "Thriller"
+		},
+        {
+            "id": "22",
+            "title": "Western"
+        }
+    ]
+}

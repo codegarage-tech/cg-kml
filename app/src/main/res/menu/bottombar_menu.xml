@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bb_menu_movie_detail"
+        android:icon="@drawable/ic_recents"
+        android:title="Details" />
+    <item
+        android:id="@+id/bb_menu_trailer"
+        android:icon="@drawable/ic_favorites"
+        android:title="Trailer" />
+    <item
+        android:id="@+id/bb_menu_download"
+        android:icon="@drawable/ic_nearby"
+        android:title="Download" />
+    <item
+        android:id="@+id/bb_menu_comments"
+        android:icon="@drawable/ic_friends"
+        android:title="Comments" />
+    <item
+        android:id="@+id/bb_menu_stream"
+        android:icon="@drawable/ic_restaurants"
+        android:title="Stream" />
+</menu>

@@ -1,0 +1,247 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/main_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true">
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/appbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <android.support.design.widget.CollapsingToolbarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fitsSystemWindows="true"
+                        android:minHeight="52dp"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="?attr/actionBarSize"
+                            app:cardBackgroundColor="#fff"
+                            app:cardCornerRadius="0dp"
+                            app:cardElevation="0dp"
+                            app:contentPadding="1dp"
+                            app:layout_collapseMode="pin"
+                            app:layout_scrollFlags="scroll|enterAlways">
+
+                            <com.slider.library.SliderLayout
+                                android:id="@+id/slider"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                custom:auto_cycle="true"
+                                custom:indicator_visibility="visible"
+                                custom:pager_animation="Accordion"
+                                custom:pager_animation_span="1100" />
+
+                            <com.slider.library.Indicators.PagerIndicator
+                                android:id="@+id/custom_indicator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="20dp"
+                                android:gravity="center"
+                                custom:indicator_visibility="invisible"
+                                custom:selected_color="#0095BF"
+                                custom:selected_drawable="@drawable/bird"
+                                custom:selected_height="6dp"
+                                custom:selected_padding_left="5dp"
+                                custom:selected_padding_right="5dp"
+                                custom:selected_width="6dp"
+                                custom:shape="oval"
+                                custom:unselected_color="#55333333"
+                                custom:unselected_height="6dp"
+                                custom:unselected_padding_left="5dp"
+                                custom:unselected_padding_right="5dp"
+                                custom:unselected_width="6dp" />
+
+                        </android.support.v7.widget.CardView>
+
+                    </android.support.design.widget.CollapsingToolbarLayout>
+
+                </android.support.design.widget.AppBarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:scrollbarSize="24sp"
+                        app:layout_scrollFlags="scroll"
+                        app:tabIndicatorColor="@android:color/white"
+                        app:tabSelectedTextColor="@color/white"
+                        app:tabTextColor="@color/black" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:paddingTop="64dp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/view_search_tint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.0"
+            android:background="#88000000"
+            android:elevation="2dp"
+            android:layerType="hardware"
+            android:visibility="gone" />
+
+        <org.cryse.widget.persistentsearch.PersistentSearchView
+            android:id="@+id/searchview"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="0dp"
+            app:persistentSV_customToolbarHeight="?attr/actionBarSize"
+            app:persistentSV_displayMode="toolbar"
+            app:persistentSV_editHintText="Search"
+            app:persistentSV_editHintTextColor="?android:textColorHint"
+            app:persistentSV_editTextColor="?android:textColorPrimary"
+            app:persistentSV_homeButtonMode="burger"
+            app:persistentSV_logoString="@string/string_search_logo"
+            app:persistentSV_searchCardElevation="2dp"
+            app:persistentSV_searchTextColor="?android:textColorPrimary" />
+
+    </RelativeLayout>
+
+    <com.github.pedrovgs.DraggableView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:draggable_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/draggable_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        draggable_view:bottom_view_id="@+id/dummy_text"
+        draggable_view:top_view_id="@+id/iv_fan_art"
+        draggable_view:top_view_margin_bottom="18dp"
+        draggable_view:top_view_margin_right="18dp"
+        draggable_view:top_view_x_scale_factor="@dimen/x_scale_factor"
+        draggable_view:top_view_y_scale_factor="@dimen/y_scale_factor">
+
+        <RelativeLayout
+            android:id="@+id/dummy_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iv_fan_art"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <include layout="@layout/layout_movie_detail_footer" />
+
+            </LinearLayout>
+
+            <!--<ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <include layout="@layout/layout_movie_detail_footer" />
+
+            </ScrollView>-->
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_movie_detail_header" />
+
+        <!--<FrameLayout
+            android:id="@+id/iv_fan_art"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/draggable_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/tv_show_placeholder"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@color/dark_transparent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/md_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="No mercy(2010)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/large_font_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </FrameLayout>-->
+    </com.github.pedrovgs.DraggableView>
+
+    <!--<com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        app:boom_button_color="@color/off_yellow"
+        app:boom_button_pressed_color="@color/yellow_bg"
+        app:boom_inActionBar="false" />-->
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_number_of_passenger"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edt_underline_selector"
+        android:hint="Input full name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Off_white" />
+</LinearLayout>

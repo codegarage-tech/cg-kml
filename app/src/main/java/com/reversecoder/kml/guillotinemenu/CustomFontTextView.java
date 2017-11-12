@@ -1,0 +1,21 @@
+package com.reversecoder.kml.guillotinemenu;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.TextView;
+
+public class CustomFontTextView extends TextView {
+	public CustomFontTextView(Context context) {
+		this(context, null);
+	}
+
+	public CustomFontTextView(Context context, AttributeSet attrs) {
+		this(context, attrs, 0);
+	}
+
+	public CustomFontTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+		super(context, attrs, defStyleAttr);
+		setTypeface(CustomViewApplication.canaroExtraBold);
+	}
+
+}

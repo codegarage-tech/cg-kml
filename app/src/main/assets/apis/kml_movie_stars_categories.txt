@@ -1,0 +1,30 @@
+{
+	"successCode": "1",
+	"successMessage": "Got movie categories successfully",
+    "stars": [
+        {
+            "id": "1",
+            "title": "Actor"
+        },
+        {
+            "id": "2",
+            "title": "Actress"
+        },
+        {
+            "id": "3",
+            "title": "Director"
+		},
+        {
+            "id": "4",
+            "title": "Writer"
+		},
+        {
+            "id": "5",
+            "title": "Producer"
+        },
+        {
+            "id": "6",
+            "title": "Editor"
+        }
+    ]
+}

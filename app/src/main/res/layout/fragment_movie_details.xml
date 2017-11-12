@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_rectangle_indigo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Drictor:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/medium_font_size" />
+
+            <TextView
+                android:id="@+id/md_director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hyeong-Joon Kim"
+                android:textSize="@dimen/medium_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Stars:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/medium_font_size" />
+
+            <TextView
+                android:id="@+id/md_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hye-jin Han, Nam Kyung-eub, Sang-wook Park"
+                android:textSize="@dimen/medium_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Plot summary:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/medium_font_size" />
+
+            <TextView
+                android:id="@+id/md_plot_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sol Kyung-Gu plays a staff member of the National Institute of Scientific Investigation (NISI) in South Korea. He attempts to uncover the identity of a mysterious serial killer who decapitates his victims. Ryoo Seung-Bum plays a environmentalist who holds clues to unravel the mystery."
+                android:textSize="@dimen/medium_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Synopsis:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/medium_font_size" />
+
+            <TextView
+                android:id="@+id/md_synopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Mercy (Yongseoneun Eupda) is another fantastic, yet unknown for most gem from Korean cinema, and a great debut of director Hyoung-Jun Kim, strengthened by good cast of experienced actors and beautiful cinematography. Forensic pathologist Kang Min-ho (Kyung-gu Sol) is involved in investigation of a serial killer who is known for decapitating his victims. Soon police finds a suspect, odd environmental activist Lee Seong-ho (Seung-beom Ryu), who doesn't confess but clearly is somehow involved, he then starts to play a strange game with Kang Min-ho, whose daughter untimely appears to be missing."
+                android:textSize="@dimen/medium_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
